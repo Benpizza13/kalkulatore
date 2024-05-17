@@ -42,6 +42,12 @@
 					var num2=document.getElementById('snumber').value*1.0;
 					document.getElementById('result').innerHTML=num1/num2;
 				}
+			function logarithm()
+				{
+					var num1=document.getElementById('fnumber').value*1.0;
+					var num2=document.getElementById('snumber').value*1.0;
+					document.getElementById('result').innerHTML=Math.log(num1)/Math.log(num2);
+				}
 				
 		</script>
 		
@@ -86,6 +92,11 @@
 				EXP
 			</button>
 
+			<button onclick="logarithm()">
+				LOG
+			</button>
+
+			
 			<p id="result">
 				
 			</p>
