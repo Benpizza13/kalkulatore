@@ -6,10 +6,37 @@
 		<script>
 			function addTwoNumbers()
 				{
-					var num1=document.getElementById('fnumber').value;
-					var num2=document.getElementById('snumber').value;
+					var num1=document.getElementById('fnumber').value*1.0;
+					var num2=document.getElementById('snumber').value*1.0;
 					document.getElementById('result').innerHTML=num1+num2;
 				}
+				
+			
+			function subTwoNumbers()
+				{
+					var num1=document.getElementById('fnumber').value*1.0;
+					var num2=document.getElementById('snumber').value*1.0;
+					document.getElementById('result').innerHTML=num1-num2;
+				}
+			function average()
+				{
+					var num1=document.getElementById('fnumber').value*1.0;
+					var num2=document.getElementById('snumber').value*1.0;
+					document.getElementById('result').innerHTML=(num1+num2)/2;
+				}
+			function multiply()
+				{
+					var num1=document.getElementById('fnumber').value*1.0;
+					var num2=document.getElementById('snumber').value*1.0;
+					document.getElementById('result').innerHTML=num1*num2;
+				}
+			function exponential()
+				{
+					var num1=document.getElementById('fnumber').value*1.0;
+					var num2=document.getElementById('snumber').value*1.0;
+					document.getElementById('result').innerHTML=num1**num2;
+				}
+			
 		</script>
 		
 	</head>
@@ -25,14 +52,27 @@
 			  <input type="text" id="snumber" name="snumber"><br><br>
 			
 		</form>
-		
-		<div>
-			<img id="light" src="./lightoff.png">
-		</div>
 				
 		<div>
 			<button onclick="addTwoNumbers()">
-				donda change se wörld
+				ADD
+			</button>
+			
+			<button onclick="subTwoNumbers()">
+				SUB
+			</button>
+			
+			
+			<button onclick="average()">
+				AVG
+			</button>
+			
+			<button onclick="multiply()">
+				MULT
+			</button>
+			
+			<button onclick="exponential()">
+				EXP
 			</button>
 
 			<p id="result">
